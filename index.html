@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduVora | Study Video Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="EduVora home">
+      <span class="brand-mark">E</span>
+      <span>EduVora</span>
+    </a>
+    <form class="search" id="searchForm">
+      <span aria-hidden="true">⌕</span>
+      <input id="searchInput" type="search" placeholder="Search lessons, exams, skills..." aria-label="Search educational content" />
+      <button type="submit">Search</button>
+    </form>
+    <nav class="top-actions" aria-label="Main actions">
+      <button class="icon-button" id="themeToggle" type="button" title="Toggle theme">◐</button>
+      <a class="ghost-button" href="#login">Login</a>
+      <a class="primary-button" href="#signup">Start Learning</a>
+    </nav>
+  </header>
+
+  <aside class="sidebar" aria-label="Study navigation">
+    <a class="nav-link active" href="#home" data-page="home">Home</a>
+    <a class="nav-link" href="#courses" data-page="courses">Courses</a>
+    <a class="nav-link" href="#dashboard" data-page="dashboard">Dashboard</a>
+    <a class="nav-link" href="#live" data-page="live">Live Classes</a>
+    <a class="nav-link" href="#quiz" data-page="quiz">Quizzes</a>
+    <a class="nav-link" href="#forum" data-page="forum">Forum</a>
+    <a class="nav-link" href="#certificates" data-page="certificates">Certificates</a>
+    <a class="nav-link" href="#assistant" data-page="assistant">AI Assistant</a>
+  </aside>
+
+  <main class="app-shell">
+    <section class="page active-page" id="home">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Study-only video learning platform</p>
+          <h1>Learn with structured courses, live classes, quizzes, and smart study paths.</h1>
+          <p>EduVora brings YouTube-style discovery to education only, with playlists for school subjects, coding, exams, languages, design, business, and AI.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#courses">Explore Courses</a>
+            <a class="ghost-button" href="#dashboard">View Dashboard</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Featured lesson">
+          <div class="video-frame">
+            <iframe title="Study video: How to Learn Anything" src="https://www.youtube.com/embed/Z2N5a7XZWg8" allowfullscreen></iframe>
+          </div>
+          <div class="lesson-meta">
+            <div>
+              <strong>Featured Study Session</strong>
+              <span>Learning strategy • 18 min • Beginner</span>
+            </div>
+            <button class="small-button">Enroll</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <h2>Trending Study Topics</h2>
+        <a href="#courses">See all</a>
+      </div>
+      <div class="topic-row">
+        <button data-filter="Programming">Programming</button>
+        <button data-filter="Data Science">Data Science</button>
+        <button data-filter="AI & ML">AI & ML</button>
+        <button data-filter="Competitive Exams">Competitive Exams</button>
+        <button data-filter="School Education">School Education</button>
+        <button data-filter="Languages">Languages</button>
+      </div>
+
+      <div class="section-heading">
+        <h2>Recommended Lessons</h2>
+        <span id="resultCount">8 study videos</span>
+      </div>
+      <div class="course-grid" id="homeCourses"></div>
+    </section>
+
+    <section class="page" id="courses">
+      <div class="page-title">
+        <p class="eyebrow">Course Library</p>
+        <h1>Every video here is for study.</h1>
+        <p>Filter by subject, level, and progress to build a clean learning path.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Course filters">
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="All">All categories</option>
+          <option>Programming</option>
+          <option>Data Science</option>
+          <option>AI & ML</option>
+          <option>Business</option>
+          <option>Design</option>

@@ -1,0 +1,183 @@
+}
+
+.plan-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.live-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.live-card {
+  padding: 20px;
+}
+
+.live-badge {
+  display: inline-block;
+  padding: 7px 10px;
+  color: #ffffff;
+  background: var(--danger);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.quiz-card,
+.assistant-box,
+.certificate,
+.auth-card {
+  max-width: 780px;
+  padding: 24px;
+}
+
+.quiz-card fieldset {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.result-text {
+  min-height: 28px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.assistant-messages {
+  display: grid;
+  gap: 12px;
+  min-height: 180px;
+  max-height: 320px;
+  overflow: auto;
+  padding: 16px;
+  background: var(--panel-2);
+  border-radius: 8px;
+}
+
+.assistant-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.certificate {
+  text-align: center;
+  border: 2px solid var(--accent);
+}
+
+.certificate span {
+  color: var(--accent);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.certificate h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.auth-page {
+  min-height: calc(100vh - 136px);
+  place-items: center;
+}
+
+.auth-page.active-page {
+  display: grid;
+}
+
+.auth-card {
+  display: grid;
+  gap: 12px;
+  width: min(100%, 460px);
+}
+
+.auth-card h1 {
+  margin: 0 0 8px;
+}
+
+@media (max-width: 1060px) {
+  .topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 189px;
+    z-index: 8;
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 189px;
+    padding: 10px 12px;
+    overflow-x: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-link {
+    flex: 0 0 auto;
+  }
+
+  .app-shell {
+    padding: 22px 18px 36px;
+  }
+
+  .hero,
+  .watch-layout,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .course-grid,
+  .stats-grid,
+  .live-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    padding: 12px;
+  }
+
+  .top-actions {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+  }
+
+  .search {
+    grid-template-columns: auto 1fr;
+  }
+
+  .search button {
+    display: none;
+  }
+
+  .sidebar {
+    margin-top: 185px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 12px;
+  }
+
+  .course-grid,
+  .stats-grid,
+  .live-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .watch-header,
+  .lesson-meta,
+  .section-heading,
+  .assistant-form {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+}
