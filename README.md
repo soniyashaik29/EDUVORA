@@ -14,7 +14,7 @@ It provides students with a dedicated space to discover educational content, fol
 
 The EduVora homepage introduces the platform and provides quick access to courses, learning resources, live classes, quizzes, and other study features.
 
-![EduVora Home Page](screenshots/home.png)
+![EduVora Home Page](Home.png)
 
 ---
 
@@ -22,7 +22,7 @@ The EduVora homepage introduces the platform and provides quick access to course
 
 The Course Library allows learners to explore educational videos and organize their learning based on subjects and levels.
 
-![EduVora Course Library](screenshots/courses.png)
+![EduVora Course Library](Courses.png)
 
 ---
 
@@ -30,31 +30,7 @@ The Course Library allows learners to explore educational videos and organize th
 
 The dashboard helps students track their learning progress, completed lessons, study hours, courses in progress, and learning streak.
 
-![EduVora Dashboard](screenshots/dashboard.png)
-
----
-
-### 🎥 Live Classes
-
-Students can join scheduled interactive study sessions and view currently live or upcoming classes.
-
-![EduVora Live Classes](screenshots/live-classes.png)
-
----
-
-### 📝 Quick Quiz
-
-EduVora includes quizzes that allow learners to test their knowledge and receive instant feedback.
-
-![EduVora Quiz](screenshots/quizzes.png)
-
----
-
-### 🤖 AI Study Assistant
-
-The AI Study Assistant helps learners create personalized study paths based on what they want to learn.
-
-![EduVora AI Assistant](screenshots/ai-assistant.png)
+![EduVora Dashboard](Dashboard.png)
 
 ---
 
