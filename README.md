@@ -153,14 +153,6 @@ The project is built as a modern web-based educational platform using frontend w
 * Responsive layouts
 * Educational-focused user experience
 
-### External Services
-
-* YouTube video integration for learning content
-
-> Update this section if your repository uses additional frameworks, libraries, APIs, databases, or backend technologies.
-
----
-
 ## 📂 Project Structure
 
 A typical structure for the project can look like:
@@ -274,11 +266,11 @@ Some potential improvements for future versions include:
 You can add screenshots of the platform here:
 
 ```markdown
-![EduVora Home](screenshots/home.png)
+![EduVora Home](home.png)
 
-![EduVora Dashboard](screenshots/dashboard.png)
+![EduVora Dashboard](dashboard.png)
 
-![EduVora Courses](screenshots/courses.png)
+![EduVora Courses](courses.png)
 ```
 
 Screenshots are especially useful for showcasing the UI on your GitHub repository.
@@ -312,12 +304,6 @@ git push origin feature/new-feature
 ```
 
 6. Create a Pull Request.
-
----
-
-## 📄 License
-
-This project is open source and available under the **MIT License**.
 
 ---
 
