@@ -7,26 +7,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- ============ TOP BAR ============ -->
   <header class="topbar">
     <a class="brand" href="#home" aria-label="EduVora home">
       <span class="brand-mark">E</span>
       <span>EduVora</span>
     </a>
-    <form class="search" id="searchForm">
+    <form class="search" id="searchForm" role="search">
       <span aria-hidden="true">⌕</span>
-      <input id="searchInput" type="search" placeholder="Search lessons, exams, skills..." aria-label="Search educational content" />
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Search lessons, exams, skills..."
+        aria-label="Search educational content"
+      />
       <button type="submit">Search</button>
     </form>
     <nav class="top-actions" aria-label="Main actions">
-      <button class="icon-button" id="themeToggle" type="button" title="Toggle theme">◐</button>
+      <button class="icon-button" id="themeToggle" type="button" title="Toggle theme" aria-label="Toggle theme">◐</button>
       <a class="ghost-button" href="#login">Login</a>
       <a class="primary-button" href="#signup">Start Learning</a>
     </nav>
   </header>
 
+  <!-- ============ SIDEBAR ============ -->
   <aside class="sidebar" aria-label="Study navigation">
     <a class="nav-link active" href="#home" data-page="home">Home</a>
     <a class="nav-link" href="#courses" data-page="courses">Courses</a>
@@ -38,7 +45,10 @@
     <a class="nav-link" href="#assistant" data-page="assistant">AI Assistant</a>
   </aside>
 
+  <!-- ============ MAIN ============ -->
   <main class="app-shell">
+
+    <!-- ---------- HOME ---------- -->
     <section class="page active-page" id="home">
       <div class="hero">
         <div class="hero-copy">
@@ -52,14 +62,19 @@
         </div>
         <div class="hero-panel" aria-label="Featured lesson">
           <div class="video-frame">
-            <iframe title="Study video: How to Learn Anything" src="https://www.youtube.com/embed/Z2N5a7XZWg8" allowfullscreen></iframe>
+            <iframe
+              title="Study video: How to Learn Anything"
+              src="https://www.youtube.com/embed/Z2N5a7XZWg8"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
           </div>
           <div class="lesson-meta">
             <div>
               <strong>Featured Study Session</strong>
               <span>Learning strategy • 18 min • Beginner</span>
             </div>
-            <button class="small-button">Enroll</button>
+            <button class="small-button" type="button">Enroll</button>
           </div>
         </div>
       </div>
@@ -71,7 +86,7 @@
       <div class="topic-row">
         <button data-filter="Programming">Programming</button>
         <button data-filter="Data Science">Data Science</button>
-        <button data-filter="AI & ML">AI & ML</button>
+        <button data-filter="AI & ML">AI &amp; ML</button>
         <button data-filter="Competitive Exams">Competitive Exams</button>
         <button data-filter="School Education">School Education</button>
         <button data-filter="Languages">Languages</button>
@@ -84,6 +99,7 @@
       <div class="course-grid" id="homeCourses"></div>
     </section>
 
+    <!-- ---------- COURSES ---------- -->
     <section class="page" id="courses">
       <div class="page-title">
         <p class="eyebrow">Course Library</p>
@@ -95,6 +111,242 @@
           <option value="All">All categories</option>
           <option>Programming</option>
           <option>Data Science</option>
-          <option>AI & ML</option>
+          <option>AI &amp; ML</option>
           <option>Business</option>
           <option>Design</option>
+          <option>Competitive Exams</option>
+          <option>School Education</option>
+          <option>Languages</option>
+        </select>
+        <select id="levelFilter" aria-label="Filter by level">
+          <option value="All">All levels</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+      </div>
+      <div class="course-grid" id="courseGrid"></div>
+    </section>
+
+    <!-- ---------- DASHBOARD ---------- -->
+    <section class="page" id="dashboard">
+      <div class="page-title">
+        <p class="eyebrow">Your Dashboard</p>
+        <h1>Track your progress.</h1>
+        <p>Keep learning, finish lessons, and earn certificates.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Courses in progress</span>
+          <strong class="stat-value">4</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Lessons completed</span>
+          <strong class="stat-value">37</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Study hours</span>
+          <strong class="stat-value">18h</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Day streak</span>
+          <strong class="stat-value">6 🔥</strong>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <h2>Continue learning</h2>
+      </div>
+      <div class="continue-list" id="continueList"></div>
+    </section>
+
+    <!-- ---------- LIVE ---------- -->
+    <section class="page" id="live">
+      <div class="page-title">
+        <p class="eyebrow">Live Classes</p>
+        <h1>Join scheduled study sessions.</h1>
+        <p>Interactive classes hosted by expert instructors.</p>
+      </div>
+      <div class="course-grid live-grid">
+        <article class="course-card live-card">
+          <span class="live-badge">● LIVE NOW</span>
+          <h3>Python for Data Science</h3>
+          <p>With Dr. Meera Rao</p>
+          <div class="course-actions">
+            <span>342 watching</span>
+            <button class="small-button" type="button">Join</button>
+          </div>
+        </article>
+        <article class="course-card live-card">
+          <span class="live-badge">● LIVE NOW</span>
+          <h3>Advanced Calculus — Problem Solving</h3>
+          <p>With Prof. Arjun Mehta</p>
+          <div class="course-actions">
+            <span>128 watching</span>
+            <button class="small-button" type="button">Join</button>
+          </div>
+        </article>
+        <article class="course-card live-card">
+          <span class="live-badge" style="background: var(--accent);">UPCOMING</span>
+          <h3>Machine Learning Foundations</h3>
+          <p>Starts in 45 minutes</p>
+          <div class="course-actions">
+            <span>Reminder set</span>
+            <button class="small-button" type="button">Remind</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ---------- QUIZ ---------- -->
+    <section class="page" id="quiz">
+      <div class="page-title">
+        <p class="eyebrow">Quick Quiz</p>
+        <h1>Test your knowledge.</h1>
+        <p>Two questions — Instant feedback.</p>
+      </div>
+      <div class="course-card quiz-card">
+        <form id="quizForm">
+          <fieldset>
+            <legend><strong>1. Which language styles web pages?</strong></legend>
+            <label><input type="radio" name="q1" value="HTML" /> HTML</label>
+            <label><input type="radio" name="q1" value="CSS" /> CSS</label>
+            <label><input type="radio" name="q1" value="JavaScript" /> JavaScript</label>
+          </fieldset>
+          <fieldset>
+            <legend><strong>2. Which HTTP method is typically used to submit a form?</strong></legend>
+            <label><input type="radio" name="q2" value="Get" /> GET</label>
+            <label><input type="radio" name="q2" value="Connect" /> CONNECT</label>
+            <label><input type="radio" name="q2" value="Post" /> POST</label>
+          </fieldset>
+          <button class="primary-button" type="submit">Check Answers</button>
+          <p class="result-text" id="quizResult"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ---------- FORUM ---------- -->
+    <section class="page" id="forum">
+      <div class="page-title">
+        <p class="eyebrow">Community Forum</p>
+        <h1>Ask, answer, and discuss.</h1>
+      </div>
+      <div class="course-grid">
+        <article class="course-card">
+          <h3>How do I stay consistent while learning to code?</h3>
+          <p>Started 2 hours ago · 14 replies</p>
+          <div class="course-actions">
+            <strong>@aarav</strong>
+            <button class="small-button" type="button">Open</button>
+          </div>
+        </article>
+        <article class="course-card">
+          <h3>Best resources for DSA in 2025?</h3>
+          <p>Started 1 day ago · 27 replies</p>
+          <div class="course-actions">
+            <strong>@priya</strong>
+            <button class="small-button" type="button">Open</button>
+          </div>
+        </article>
+        <article class="course-card">
+          <h3>Tips for revising before competitive exams?</h3>
+          <p>Started 3 days ago · 8 replies</p>
+          <div class="course-actions">
+            <strong>@rohan</strong>
+            <button class="small-button" type="button">Open</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ---------- CERTIFICATES ---------- -->
+    <section class="page" id="certificates">
+      <div class="page-title">
+        <p class="eyebrow">Your Certificates</p>
+        <h1>Well done!</h1>
+      </div>
+      <div class="certificate course-card">
+        <span>Certificate of Completion</span>
+        <h2>Python Programming Fundamentals</h2>
+        <p>Issued by EduVora · Verified on 12 Sep 2025</p>
+        <button class="primary-button" type="button">Download PDF</button>
+      </div>
+    </section>
+
+    <!-- ---------- AI ASSISTANT ---------- -->
+    <section class="page" id="assistant">
+      <div class="page-title">
+        <p class="eyebrow">AI Study Assistant</p>
+        <h1>Ask for a study plan.</h1>
+      </div>
+      <div class="course-card assistant-box">
+        <div class="assistant-messages" id="assistantMessages">
+          <p><strong>EduVora AI:</strong> Hi! Tell me what you want to learn and I'll suggest a study path.</p>
+        </div>
+        <form class="assistant-form" id="assistantForm">
+          <input
+            id="assistantInput"
+            type="text"
+            placeholder="e.g. I want to learn Python in 30 days"
+            aria-label="Ask the AI assistant"
+          />
+          <button class="primary-button" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ---------- WATCH ---------- -->
+    <section class="page" id="watch">
+      <div class="watch-layout">
+        <div>
+          <div class="video-frame">
+            <iframe
+              id="watchVideo"
+              title="Lesson video"
+              allowfullscreen
+              loading="lazy"
+              src=""
+            ></iframe>
+          </div>
+          <h1 id="watchTitle">Lesson</h1>
+          <p class="eyebrow" id="watchCategory"></p>
+          <p id="watchDescription"></p>
+          <div class="hero-actions">
+            <button class="primary-button" id="bookmarkBtn" type="button">Bookmark</button>
+          </div>
+        </div>
+        <aside class="curriculum">
+          <h3>Curriculum</h3>
+          <ul id="curriculumList"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ---------- LOGIN ---------- -->
+    <section class="page auth-page" id="login">
+      <div class="auth-card course-card">
+        <h1>Welcome back</h1>
+        <p>Log in to continue learning.</p>
+        <input type="email" placeholder="Email" aria-label="Email" />
+        <input type="password" placeholder="Password" aria-label="Password" />
+        <button class="primary-button" type="button">Log In</button>
+      </div>
+    </section>
+
+    <!-- ---------- SIGNUP ---------- -->
+    <section class="page auth-page" id="signup">
+      <div class="auth-card course-card">
+        <h1>Create your account</h1>
+        <p>Start learning with EduVora.</p>
+        <input type="text" placeholder="Full name" aria-label="Full name" />
+        <input type="email" placeholder="Email" aria-label="Email" />
+        <input type="password" placeholder="Password" aria-label="Password" />
+        <button class="primary-button" type="button">Sign Up</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
