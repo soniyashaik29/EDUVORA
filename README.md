@@ -1,112 +1,127 @@
 # 🎓 EduVora — Study Video Learning Platform
 
-**EduVora** is a modern study-focused video learning platform designed to make online education more structured, interactive, and engaging.
+EduVora is a modern **study-focused video learning platform** designed to make online education organized, interactive, and engaging.
 
-The platform brings together educational video content, structured courses, live classes, quizzes, progress tracking, certificates, community discussions, and an AI-powered study assistant in one learning environment.
+It provides students with a dedicated space to discover educational content, follow structured courses, attend live classes, take quizzes, track their learning progress, participate in discussions, earn certificates, and get assistance from an AI study assistant.
 
-🌐 **Live Demo:** [EduVora](https://soniyashaik29.github.io/EDUVORA/)
+🔗 **Live Website:** https://soniyashaik29.github.io/EDUVORA/
 
 ---
 
-## 📖 About the Project
+## 📸 Screenshots
 
-EduVora is designed around one simple idea:
+### 🏠 Home Page
 
-> **Every video should help you learn.**
+The EduVora homepage introduces the platform and provides quick access to courses, learning resources, live classes, quizzes, and other study features.
 
-Instead of general-purpose video discovery, EduVora focuses specifically on educational content. Students can explore structured learning materials across programming, data science, AI & machine learning, competitive exams, school education, languages, design, business, and other subjects.
+![EduVora Home Page](screenshots/home.png)
 
-The platform provides a clean learning experience where users can discover lessons, follow courses, attend live classes, test their knowledge, monitor their progress, and earn certificates.
+---
+
+### 📚 Course Library
+
+The Course Library allows learners to explore educational videos and organize their learning based on subjects and levels.
+
+![EduVora Course Library](screenshots/courses.png)
+
+---
+
+### 📊 Student Dashboard
+
+The dashboard helps students track their learning progress, completed lessons, study hours, courses in progress, and learning streak.
+
+![EduVora Dashboard](screenshots/dashboard.png)
+
+---
+
+### 🎥 Live Classes
+
+Students can join scheduled interactive study sessions and view currently live or upcoming classes.
+
+![EduVora Live Classes](screenshots/live-classes.png)
+
+---
+
+### 📝 Quick Quiz
+
+EduVora includes quizzes that allow learners to test their knowledge and receive instant feedback.
+
+![EduVora Quiz](screenshots/quizzes.png)
+
+---
+
+### 🤖 AI Study Assistant
+
+The AI Study Assistant helps learners create personalized study paths based on what they want to learn.
+
+![EduVora AI Assistant](screenshots/ai-assistant.png)
 
 ---
 
 ## ✨ Features
 
-### 📚 Course Library
+* 🎥 **Study Video Learning**
 
-* Browse educational courses and lessons
-* Explore different subjects and learning paths
-* Filter content by subject and level
-* Track course progress
-* Continue learning from where you left off
+  * Educational videos organized for focused learning
+  * Structured learning paths
+  * Recommended lessons
 
-### 🎥 Study Videos
+* 📚 **Course Library**
 
-* Dedicated educational video content
-* Structured study sessions
-* Beginner-friendly learning resources
-* Video-based learning experience
+  * Browse educational courses
+  * Filter learning content by subject and level
+  * Continue learning from where you stopped
 
-### 🔴 Live Classes
+* 📊 **Learning Dashboard**
 
-* Join scheduled interactive classes
-* View currently active sessions
-* See upcoming classes
-* Set reminders for upcoming sessions
-* Learn from expert instructors
+  * Track courses in progress
+  * Monitor completed lessons
+  * Track study hours
+  * Maintain learning streaks
 
-### 🧠 Quizzes
+* 🔴 **Live Classes**
 
-* Test your knowledge after learning
-* Quick interactive questions
-* Instant feedback
-* Reinforce concepts through assessments
+  * Join live study sessions
+  * View upcoming classes
+  * Set reminders for upcoming sessions
 
-### 📊 Learning Dashboard
+* 📝 **Quizzes**
 
-Students can monitor their learning activity through:
+  * Test your knowledge
+  * Get instant feedback
+  * Practice important concepts
 
-* Courses in progress
-* Completed lessons
-* Study hours
-* Learning streaks
-* Continued learning recommendations
+* 💬 **Community Forum**
 
-### 💬 Community Forum
+  * Ask questions
+  * Discuss learning topics
+  * Share knowledge with other learners
 
-EduVora provides a community space where learners can:
+* 🏆 **Certificates**
 
-* Ask questions
-* Share knowledge
-* Discuss learning strategies
-* Help other students
-* Participate in educational discussions
+  * Earn certificates after completing courses
+  * Download completion certificates
 
-### 🏆 Certificates
+* 🤖 **AI Study Assistant**
 
-* Earn certificates after completing courses
-* View completed certifications
-* Download certificates
-* Verify course completion
+  * Get personalized study guidance
+  * Create study plans
+  * Get recommendations based on learning goals
 
-### 🤖 AI Study Assistant
+* 🔐 **User Authentication**
 
-The AI Study Assistant helps learners create personalized study paths.
+  * Login functionality
+  * New user registration
 
-Users can describe what they want to learn and receive guidance for building a structured learning plan.
+* 🔎 **Search**
 
-Example:
-
-```text
-I want to learn Python in 30 days
-```
-
-The assistant can then help organize a suitable study path.
-
-### 🔐 Authentication
-
-EduVora includes user authentication functionality with:
-
-* Login
-* Account registration
-* Email and password fields
-* Personalized learning experience
+  * Search lessons, exams, and skills
 
 ---
 
-## 📚 Learning Categories
+## 🎯 Learning Categories
 
-EduVora currently provides learning categories such as:
+EduVora provides learning content across different areas, including:
 
 * 💻 Programming
 * 📊 Data Science
@@ -114,48 +129,24 @@ EduVora currently provides learning categories such as:
 * 📝 Competitive Exams
 * 🏫 School Education
 * 🌐 Languages
+* 🎨 Design
+* 💼 Business
 
 ---
 
-## 🖥️ Pages & Sections
+## 🛠️ Technologies Used
 
-The platform includes several major sections:
-
-| Section            | Purpose                         |
-| ------------------ | ------------------------------- |
-| 🏠 Home            | Discover learning content       |
-| 📚 Courses         | Browse educational courses      |
-| 📊 Dashboard       | Track learning progress         |
-| 🔴 Live Classes    | Join scheduled classes          |
-| 🧠 Quizzes         | Test knowledge                  |
-| 💬 Forum           | Discuss and ask questions       |
-| 🏆 Certificates    | Manage earned certificates      |
-| 🤖 AI Assistant    | Create personalized study plans |
-| 🔐 Login / Sign Up | Manage user accounts            |
-
----
-
-## 🛠️ Technologies
-
-The project is built as a modern web-based educational platform using frontend web technologies.
-
-### Frontend
+The project is developed as a web-based learning platform using frontend web technologies.
 
 * HTML5
 * CSS3
 * JavaScript
-
-### UI & Design
-
 * Responsive Web Design
-* Modern dashboard interface
-* Interactive components
-* Responsive layouts
-* Educational-focused user experience
+* GitHub Pages for deployment
 
-## 📂 Project Structure
+---
 
-A typical structure for the project can look like:
+## 📁 Project Structure
 
 ```text
 EDUVORA/
@@ -167,156 +158,76 @@ EDUVORA/
 ├── js/
 │   └── script.js
 │
-├── assets/
-│   ├── images/
-│   └── icons/
+├── images/
+│   └── ...
 │
 ├── screenshots/
+│   ├── home.png
+│   ├── courses.png
+│   ├── dashboard.png
+│   ├── live-classes.png
+│   ├── quizzes.png
+│   └── ai-assistant.png
 │
 └── README.md
 ```
 
-> Adjust the structure above to match your actual repository folders and files.
+> Update the folder and file names above if your actual project structure is different.
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Getting Started
 
-Experience EduVora online:
-
-**🔗 https://soniyashaik29.github.io/EDUVORA/**
-
----
-
-## 💻 Run Locally
-
-### 1. Clone the Repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/soniyashaik29/EDUVORA.git
 ```
 
-### 2. Open the Project
+### 2. Navigate to the project
 
 ```bash
 cd EDUVORA
 ```
 
-### 3. Run the Website
+### 3. Open the project
 
-If the project uses plain HTML, CSS, and JavaScript, simply open:
+Open `index.html` in your browser.
 
-```text
-index.html
-```
-
-in your browser.
-
-For a better development experience, you can use the **Live Server** extension in VS Code.
-
-Right-click:
-
-```text
-index.html
-```
-
-and select:
-
-```text
-Open with Live Server
-```
+You can also use **VS Code Live Server** for local development.
 
 ---
 
-## 🎯 Project Goals
+## 🌐 Live Demo
 
-EduVora aims to:
+You can view the deployed EduVora website here:
 
-* Make online learning more organized
-* Provide a distraction-free educational environment
-* Encourage consistent learning habits
-* Combine video learning with assessments
-* Help students track their academic progress
-* Provide personalized study guidance
-* Encourage collaboration between learners
-* Make educational resources easier to discover
+**https://soniyashaik29.github.io/EDUVORA/**
 
 ---
 
-## 🔮 Future Improvements
+![Home Page](Home.png)
 
-Some potential improvements for future versions include:
+![Course Library](Courses.png)
 
-* 🤖 Advanced AI-powered personalized learning
-* 📱 Dedicated mobile application
-* 🎥 More interactive live classes
-* 📝 Advanced examination system
-* 📈 Detailed student analytics
-* 👨‍🏫 Instructor management dashboard
-* 🔔 Email and push notifications
-* 💳 Subscription and premium courses
-* 🗣️ Video discussion and peer learning
-* 🌍 Multi-language support
-* 🏅 Gamification and achievement badges
+![Dashboard](Dashboard.png)
 
----
-
-## 📸 Screenshots
-
-You can add screenshots of the platform here:
-
-```markdown
-![EduVora Home](Home.png)
-
-![EduVora Dashboard](Dashboard.png)
-
-![EduVora Courses](Courses.png)
-```
-
-Screenshots are especially useful for showcasing the UI on your GitHub repository.
-
----
-
-## 🤝 Contributing
-
-Contributions and suggestions are welcome.
-
-### Steps to contribute
-
-1. Fork this repository.
-2. Create a new branch:
-
-```bash
-git checkout -b feature/new-feature
-```
-
-3. Make your changes.
-4. Commit your changes:
-
-```bash
-git commit -m "Add new feature"
-```
-
-5. Push your branch:
-
-```bash
-git push origin feature/new-feature
-```
-
-6. Create a Pull Request.
-
----
 
 ## 👩‍💻 Author
 
-### Soniya Shaik
+**Soniya Shaik**
 
-GitHub: [@soniyashaik29](https://github.com/soniyashaik29)
+GitHub:
+https://github.com/soniyashaik29
 
 ---
 
 ## ⭐ Support
 
-If you like EduVora and find the project useful, consider giving the repository a ⭐ on GitHub.
+If you find this project useful, consider giving the repository a ⭐ on GitHub!
 
-**Learn. Practice. Track. Grow. — EduVora 🎓**
+---
+
+## 📄 License
+
+This project is created for educational and learning purposes.
