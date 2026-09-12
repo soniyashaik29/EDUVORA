@@ -133,24 +133,11 @@ EDUVORA/
 │
 ├── js/
 │   └── script.js
-│
-├── images/
-│   └── ...
-│
-├── screenshots/
-│   ├── home.png
-│   ├── courses.png
-│   ├── dashboard.png
-│   ├── live-classes.png
-│   ├── quizzes.png
-│   └── ai-assistant.png
-│
+├── Home.png
+├── Courses.png
+├── Dashboard.png
 └── README.md
 ```
-
-> Update the folder and file names above if your actual project structure is different.
-
----
 
 ## 🚀 Getting Started
 
@@ -181,12 +168,6 @@ You can view the deployed EduVora website here:
 **https://soniyashaik29.github.io/EDUVORA/**
 
 ---
-
-![Home Page](Home.png)
-
-![Course Library](Courses.png)
-
-![Dashboard](Dashboard.png)
 
 
 ## 👩‍💻 Author
