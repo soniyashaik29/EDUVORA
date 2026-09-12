@@ -266,11 +266,11 @@ Some potential improvements for future versions include:
 You can add screenshots of the platform here:
 
 ```markdown
-![EduVora Home](home.png)
+![EduVora Home](Home.png)
 
-![EduVora Dashboard](dashboard.png)
+![EduVora Dashboard](Dashboard.png)
 
-![EduVora Courses](courses.png)
+![EduVora Courses](Courses.png)
 ```
 
 Screenshots are especially useful for showcasing the UI on your GitHub repository.
